@@ -26,6 +26,7 @@
 		0F5837A62936992000FD18B7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5837A52936992000FD18B7 /* ChatView.swift */; };
 		0F5837A82936999400FD18B7 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5837A72936999400FD18B7 /* ChatManager.swift */; };
 		0F5837AA29369C3300FD18B7 /* ChatViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5837A929369C3300FD18B7 /* ChatViewHeader.swift */; };
+		0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		0F5837A52936992000FD18B7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		0F5837A72936999400FD18B7 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		0F5837A929369C3300FD18B7 /* ChatViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewHeader.swift; sourceTree = "<group>"; };
+		0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				0F52450F2935382D00B7A6DD /* RoundedImage.swift */,
+				0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */,
 			);
 			path = HelperView;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				0F58379F29364C2E00FD18B7 /* Person.swift in Sources */,
 				0F5837A329364D5B00FD18B7 /* MessageView.swift in Sources */,
 				0F58379B293641FB00FD18B7 /* ProfileSwipePromo.swift in Sources */,
+				0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */,
 				0F5244F7293413DA00B7A6DD /* ContentView.swift in Sources */,
 				0F52450929341CCD00B7A6DD /* MainView.swift in Sources */,
 				0F58379D29364BAB00FD18B7 /* Message.swift in Sources */,

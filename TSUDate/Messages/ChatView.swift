@@ -81,6 +81,7 @@ struct ChatView: View {
             }
            
         }
+        .adaptsToKeyboard()
         .navigationTitle("")
         .navigationBarHidden(true)
         .onChange(of: chatMng.keyboardIsShowing) { value in
