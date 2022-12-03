@@ -70,6 +70,7 @@ struct ChatView: View {
                     
                     
                 }
+                
                 .frame(height: 40)
                 .cornerRadius(20)
                 .overlay  {
@@ -82,6 +83,7 @@ struct ChatView: View {
            
         }
         .adaptsToKeyboard()
+        .scrollDismissesKeyboard(.interactively)
         .navigationTitle("")
         .navigationBarHidden(true)
         .onChange(of: chatMng.keyboardIsShowing) { value in
