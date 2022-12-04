@@ -15,6 +15,6 @@ class MessageListVM: ObservableObject {
     }
     func loadPreviews() {
         // Handle networking to load messagePreviews from a sercver
-        self.messagePreviews = [MessagePreview.example]
+        self.messagePreviews = MessagePreview.examples
     }
 }

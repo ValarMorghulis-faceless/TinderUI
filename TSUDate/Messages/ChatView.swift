@@ -84,8 +84,7 @@ struct ChatView: View {
         }
         .adaptsToKeyboard()
         .scrollDismissesKeyboard(.interactively)
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .modifier(HideNavigationView())
         .onChange(of: chatMng.keyboardIsShowing) { value in
             if value {
                 scrollToBottom()

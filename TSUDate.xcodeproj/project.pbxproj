@@ -29,6 +29,17 @@
 		0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */; };
 		0F90558B293BCB9A00D17BAB /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90558A293BCB9A00D17BAB /* MessageListView.swift */; };
 		0F90558D293BCBC800D17BAB /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90558C293BCBC800D17BAB /* MessageListVM.swift */; };
+		0F90558F293BD2EC00D17BAB /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90558E293BD2EC00D17BAB /* MessageRowView.swift */; };
+		0F905591293BF3AD00D17BAB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905590293BF3AD00D17BAB /* UserManager.swift */; };
+		0F905593293BF42A00D17BAB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905592293BF42A00D17BAB /* User.swift */; };
+		0F905595293BF5FB00D17BAB /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905594293BF5FB00D17BAB /* LikesView.swift */; };
+		0F905598293BFA2300D17BAB /* PersonSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905597293BFA2300D17BAB /* PersonSquare.swift */; };
+		0F90559A293C07E600D17BAB /* TopPicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F905599293C07E600D17BAB /* TopPicksView.swift */; };
+		0F90559C293C08CF00D17BAB /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90559B293C08CF00D17BAB /* MatchesView.swift */; };
+		0F90559E293CC94100D17BAB /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90559D293CC94100D17BAB /* PurchasePopup.swift */; };
+		0F9055A1293CF51B00D17BAB /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A0293CF51B00D17BAB /* PurchaseSwipePromo.swift */; };
+		0F9055A4293CF7B500D17BAB /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */; };
+		0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A5293CF80000D17BAB /* Subscription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +65,17 @@
 		0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToKeyboard.swift; sourceTree = "<group>"; };
 		0F90558A293BCB9A00D17BAB /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		0F90558C293BCBC800D17BAB /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
+		0F90558E293BD2EC00D17BAB /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		0F905590293BF3AD00D17BAB /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0F905592293BF42A00D17BAB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0F905594293BF5FB00D17BAB /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		0F905597293BFA2300D17BAB /* PersonSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSquare.swift; sourceTree = "<group>"; };
+		0F905599293C07E600D17BAB /* TopPicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPicksView.swift; sourceTree = "<group>"; };
+		0F90559B293C08CF00D17BAB /* MatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		0F90559D293CC94100D17BAB /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
+		0F9055A0293CF51B00D17BAB /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
+		0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
+		0F9055A5293CF80000D17BAB /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +109,7 @@
 		0F5244F3293413DA00B7A6DD /* TSUDate */ = {
 			isa = PBXGroup;
 			children = (
+				0F905596293BF60300D17BAB /* MatchesView */,
 				0F52451429353A6E00B7A6DD /* HelperView */,
 				0F52450C2935361700B7A6DD /* MainTabBar */,
 				0F5837A429364D5F00FD18B7 /* Messages */,
@@ -98,6 +121,8 @@
 				0F5244F8293413DD00B7A6DD /* Assets.xcassets */,
 				0F5244FA293413DD00B7A6DD /* Preview Content */,
 				0F52450A29341EEC00B7A6DD /* Extensions.swift */,
+				0F905590293BF3AD00D17BAB /* UserManager.swift */,
+				0F90559F293CC94600D17BAB /* Popups */,
 			);
 			path = TSUDate;
 			sourceTree = "<group>";
@@ -125,6 +150,8 @@
 				0F58379C29364BAB00FD18B7 /* Message.swift */,
 				0F58379E29364C2E00FD18B7 /* Person.swift */,
 				0F5837A029364CAC00FD18B7 /* MessageThread.swift */,
+				0F905592293BF42A00D17BAB /* User.swift */,
+				0F9055A5293CF80000D17BAB /* Subscription.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,8 +183,38 @@
 				0F5837A929369C3300FD18B7 /* ChatViewHeader.swift */,
 				0F90558A293BCB9A00D17BAB /* MessageListView.swift */,
 				0F90558C293BCBC800D17BAB /* MessageListVM.swift */,
+				0F90558E293BD2EC00D17BAB /* MessageRowView.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		0F905596293BF60300D17BAB /* MatchesView */ = {
+			isa = PBXGroup;
+			children = (
+				0F905594293BF5FB00D17BAB /* LikesView.swift */,
+				0F905597293BFA2300D17BAB /* PersonSquare.swift */,
+				0F905599293C07E600D17BAB /* TopPicksView.swift */,
+				0F90559B293C08CF00D17BAB /* MatchesView.swift */,
+			);
+			path = MatchesView;
+			sourceTree = "<group>";
+		};
+		0F90559F293CC94600D17BAB /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				0F9055A2293CF52200D17BAB /* Purchase */,
+			);
+			path = Popups;
+			sourceTree = "<group>";
+		};
+		0F9055A2293CF52200D17BAB /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				0F90559D293CC94100D17BAB /* PurchasePopup.swift */,
+				0F9055A0293CF51B00D17BAB /* PurchaseSwipePromo.swift */,
+				0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,18 +295,29 @@
 			files = (
 				0F5837A82936999400FD18B7 /* ChatManager.swift in Sources */,
 				0F5245052934164400B7A6DD /* TabBarButtonView.swift in Sources */,
+				0F90559C293C08CF00D17BAB /* MatchesView.swift in Sources */,
 				0F5245102935382D00B7A6DD /* RoundedImage.swift in Sources */,
 				0F90558D293BCBC800D17BAB /* MessageListVM.swift in Sources */,
 				0F5837AA29369C3300FD18B7 /* ChatViewHeader.swift in Sources */,
+				0F90559A293C07E600D17BAB /* TopPicksView.swift in Sources */,
+				0F9055A4293CF7B500D17BAB /* PurchaseOptionView.swift in Sources */,
 				0F90558B293BCB9A00D17BAB /* MessageListView.swift in Sources */,
 				0F52450B29341EEC00B7A6DD /* Extensions.swift in Sources */,
 				0F52450729341C0600B7A6DD /* AppStateManager.swift in Sources */,
 				0F5837A62936992000FD18B7 /* ChatView.swift in Sources */,
+				0F9055A1293CF51B00D17BAB /* PurchaseSwipePromo.swift in Sources */,
+				0F905591293BF3AD00D17BAB /* UserManager.swift in Sources */,
+				0F90559E293CC94100D17BAB /* PurchasePopup.swift in Sources */,
+				0F905593293BF42A00D17BAB /* User.swift in Sources */,
 				0F58379F29364C2E00FD18B7 /* Person.swift in Sources */,
 				0F5837A329364D5B00FD18B7 /* MessageView.swift in Sources */,
+				0F905598293BFA2300D17BAB /* PersonSquare.swift in Sources */,
+				0F90558F293BD2EC00D17BAB /* MessageRowView.swift in Sources */,
+				0F905595293BF5FB00D17BAB /* LikesView.swift in Sources */,
 				0F58379B293641FB00FD18B7 /* ProfileSwipePromo.swift in Sources */,
 				0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */,
 				0F5244F7293413DA00B7A6DD /* ContentView.swift in Sources */,
+				0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */,
 				0F52450929341CCD00B7A6DD /* MainView.swift in Sources */,
 				0F58379D29364BAB00FD18B7 /* Message.swift in Sources */,
 				0F52450E293536C400B7A6DD /* ProfileView.swift in Sources */,

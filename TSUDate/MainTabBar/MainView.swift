@@ -16,11 +16,11 @@ struct MainView: View {
             let view = Text("Fire")
            return AnyView(view)
         case .star:
-            let view = Text("Star")
+            let view = MatchesView()
            return AnyView(view)
         case .message:
-            let view = ChatView(person: Person.example )
-           return AnyView(view)
+            let view = MessageListView()
+            return AnyView(view)
         case .profile:
             let view = ProfileView()
            return AnyView(view)
@@ -28,36 +28,42 @@ struct MainView: View {
     }
     
     var body: some View {
-        ZStack {
-            Color(.systemGray6)
-                .opacity(0.35)
-                .edgesIgnoringSafeArea(.vertical)
-            
-            VStack (){
+        NavigationView {
+            ZStack {
+                Color(.systemGray6)
+                    .opacity(0.35)
+                    .edgesIgnoringSafeArea(.vertical)
                 
-                HStack(spacing:80) {
-                    TabBarButtonView(type: .fire)
+                VStack (){
                     
-                    TabBarButtonView(type: .star)
-                    
-                    TabBarButtonView(type: .message)
-                    
-                    TabBarButtonView(type: .profile)
-                 
-                    
+                    HStack(spacing:80) {
+                        TabBarButtonView(type: .fire)
+                        
+                        TabBarButtonView(type: .star)
+                        
+                        TabBarButtonView(type: .message)
+                        
+                        TabBarButtonView(type: .profile)
+                     
+                        
+                    }
+                    .frame(height: 100)
+                    .padding(.top, 30)
+                    correctViewForState()
+                    Spacer()
                 }
-                .frame(height: 100)
-                .padding(.top, 30)
-                correctViewForState()
-                Spacer()
+                .edgesIgnoringSafeArea(.vertical)
             }
-            .edgesIgnoringSafeArea(.vertical)
+            .modifier(HideNavigationView())
+            
         }
+    
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView().environmentObject(AppStateManager())
+            .environmentObject(UserManager())
     }
 }

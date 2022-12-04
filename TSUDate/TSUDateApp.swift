@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct TSUDateApp: App {
+    
+    @ObservedObject var UserMng: UserManager = UserManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
