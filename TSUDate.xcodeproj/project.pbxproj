@@ -41,6 +41,7 @@
 		0F9055A4293CF7B500D17BAB /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */; };
 		0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A5293CF80000D17BAB /* Subscription.swift */; };
 		0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */; };
+		0F9055AB293D53D300D17BAB /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055AA293D53D300D17BAB /* CardImageScroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 		0F9055A5293CF80000D17BAB /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		0F9055AA293D53D300D17BAB /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				0F9055A9293D2BEE00D17BAB /* Extensions */,
 				0F905590293BF3AD00D17BAB /* UserManager.swift */,
 				0F90559F293CC94600D17BAB /* Popups */,
+				0F9055AD293D540200D17BAB /* Home */,
 			);
 			path = TSUDate;
 			sourceTree = "<group>";
@@ -228,6 +231,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0F9055AC293D53EF00D17BAB /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				0F9055AA293D53D300D17BAB /* CardImageScroller.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		0F9055AD293D540200D17BAB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0F9055AC293D53EF00D17BAB /* CardView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +344,7 @@
 				0F905598293BFA2300D17BAB /* PersonSquare.swift in Sources */,
 				0F90558F293BD2EC00D17BAB /* MessageRowView.swift in Sources */,
 				0F905595293BF5FB00D17BAB /* LikesView.swift in Sources */,
+				0F9055AB293D53D300D17BAB /* CardImageScroller.swift in Sources */,
 				0F58379B293641FB00FD18B7 /* ProfileSwipePromo.swift in Sources */,
 				0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */,
 				0F5244F7293413DA00B7A6DD /* ContentView.swift in Sources */,
