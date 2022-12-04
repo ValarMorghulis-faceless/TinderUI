@@ -40,6 +40,7 @@
 		0F9055A1293CF51B00D17BAB /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A0293CF51B00D17BAB /* PurchaseSwipePromo.swift */; };
 		0F9055A4293CF7B500D17BAB /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */; };
 		0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A5293CF80000D17BAB /* Subscription.swift */; };
+		0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		0F9055A0293CF51B00D17BAB /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
 		0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
 		0F9055A5293CF80000D17BAB /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 				0F52450629341C0600B7A6DD /* AppStateManager.swift */,
 				0F5244F8293413DD00B7A6DD /* Assets.xcassets */,
 				0F5244FA293413DD00B7A6DD /* Preview Content */,
-				0F52450A29341EEC00B7A6DD /* Extensions.swift */,
+				0F9055A9293D2BEE00D17BAB /* Extensions */,
 				0F905590293BF3AD00D17BAB /* UserManager.swift */,
 				0F90559F293CC94600D17BAB /* Popups */,
 			);
@@ -169,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				0F52450F2935382D00B7A6DD /* RoundedImage.swift */,
-				0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */,
 			);
 			path = HelperView;
 			sourceTree = "<group>";
@@ -215,6 +216,16 @@
 				0F9055A3293CF7B500D17BAB /* PurchaseOptionView.swift */,
 			);
 			path = Purchase;
+			sourceTree = "<group>";
+		};
+		0F9055A9293D2BEE00D17BAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F52450A29341EEC00B7A6DD /* Extensions.swift */,
+				0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */,
+				0F905588293A775B00D17BAB /* AdaptsToKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +330,7 @@
 				0F5244F7293413DA00B7A6DD /* ContentView.swift in Sources */,
 				0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */,
 				0F52450929341CCD00B7A6DD /* MainView.swift in Sources */,
+				0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */,
 				0F58379D29364BAB00FD18B7 /* Message.swift in Sources */,
 				0F52450E293536C400B7A6DD /* ProfileView.swift in Sources */,
 				0F5244F5293413DA00B7A6DD /* TSUDateApp.swift in Sources */,
