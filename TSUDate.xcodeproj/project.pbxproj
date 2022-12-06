@@ -44,6 +44,9 @@
 		0F9055AB293D53D300D17BAB /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055AA293D53D300D17BAB /* CardImageScroller.swift */; };
 		0F9055AF293E12C000D17BAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055AE293E12C000D17BAB /* CardView.swift */; };
 		0F9055B1293E217600D17BAB /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055B0293E217600D17BAB /* FullScreenCardView.swift */; };
+		0F9055B3293F5C5000D17BAB /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055B2293F5C5000D17BAB /* CircleButtonView.swift */; };
+		0F9055B5293FD42700D17BAB /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055B4293FD42700D17BAB /* CardStack.swift */; };
+		0F9055B7293FD59C00D17BAB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055B6293FD59C00D17BAB /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +87,9 @@
 		0F9055AA293D53D300D17BAB /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
 		0F9055AE293E12C000D17BAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0F9055B0293E217600D17BAB /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
+		0F9055B2293F5C5000D17BAB /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		0F9055B4293FD42700D17BAB /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		0F9055B6293FD59C00D17BAB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0F52450F2935382D00B7A6DD /* RoundedImage.swift */,
+				0F9055B2293F5C5000D17BAB /* CircleButtonView.swift */,
 			);
 			path = HelperView;
 			sourceTree = "<group>";
@@ -241,6 +248,7 @@
 				0F9055AA293D53D300D17BAB /* CardImageScroller.swift */,
 				0F9055AE293E12C000D17BAB /* CardView.swift */,
 				0F9055B0293E217600D17BAB /* FullScreenCardView.swift */,
+				0F9055B4293FD42700D17BAB /* CardStack.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				0F9055AC293D53EF00D17BAB /* CardView */,
+				0F9055B6293FD59C00D17BAB /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -352,8 +361,11 @@
 				0F905595293BF5FB00D17BAB /* LikesView.swift in Sources */,
 				0F9055AB293D53D300D17BAB /* CardImageScroller.swift in Sources */,
 				0F58379B293641FB00FD18B7 /* ProfileSwipePromo.swift in Sources */,
+				0F9055B7293FD59C00D17BAB /* HomeView.swift in Sources */,
+				0F9055B3293F5C5000D17BAB /* CircleButtonView.swift in Sources */,
 				0F905589293A775B00D17BAB /* AdaptsToKeyboard.swift in Sources */,
 				0F5244F7293413DA00B7A6DD /* ContentView.swift in Sources */,
+				0F9055B5293FD42700D17BAB /* CardStack.swift in Sources */,
 				0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */,
 				0F52450929341CCD00B7A6DD /* MainView.swift in Sources */,
 				0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */,

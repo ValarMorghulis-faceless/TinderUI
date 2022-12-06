@@ -27,6 +27,8 @@ struct CardImageScroller: View {
         imageIndex = min(max(0, newIndex), person.imageURLS.count - 1)
     }
     
+    let screenCutoff = (UIScreen.main.bounds.width / 2) * 0.4
+    
     var body: some View {
         GeometryReader { geo in
             
@@ -40,6 +42,29 @@ struct CardImageScroller: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: geo.size.width, height: geo.size.height)
                         .clipped()
+                    
+                    VStack{
+                        HStack {
+                            Image("likeButton")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150)
+                                .opacity(Double(person.x / screenCutoff) - 1)
+                            
+                            Spacer()
+                            
+                            Image("nopeButton")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150)
+                                .opacity(Double(person.x / screenCutoff * -1) - 1)
+                        }
+                        
+                        Spacer()
+                    }
+                    
+                    
+                    
                     HStack {
                         Rectangle()
                             .onTapGesture {
@@ -83,7 +108,7 @@ struct CardImageScroller: View {
                             }
                             Spacer()
                             Button(action: {
-                                
+                                fullscreenMode = true
                             }, label: {
                                 Image(systemName: "info.circle.fill")
                                     .font(.system(size: 26, weight: .medium))
