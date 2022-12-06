@@ -42,6 +42,8 @@
 		0F9055A6293CF80000D17BAB /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A5293CF80000D17BAB /* Subscription.swift */; };
 		0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */; };
 		0F9055AB293D53D300D17BAB /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055AA293D53D300D17BAB /* CardImageScroller.swift */; };
+		0F9055AF293E12C000D17BAB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055AE293E12C000D17BAB /* CardView.swift */; };
+		0F9055B1293E217600D17BAB /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9055B0293E217600D17BAB /* FullScreenCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		0F9055A5293CF80000D17BAB /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		0F9055A7293D2BDE00D17BAB /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		0F9055AA293D53D300D17BAB /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
+		0F9055AE293E12C000D17BAB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0F9055B0293E217600D17BAB /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				0F9055AA293D53D300D17BAB /* CardImageScroller.swift */,
+				0F9055AE293E12C000D17BAB /* CardView.swift */,
+				0F9055B0293E217600D17BAB /* FullScreenCardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -352,8 +358,10 @@
 				0F52450929341CCD00B7A6DD /* MainView.swift in Sources */,
 				0F9055A8293D2BDE00D17BAB /* RoundedCorner.swift in Sources */,
 				0F58379D29364BAB00FD18B7 /* Message.swift in Sources */,
+				0F9055B1293E217600D17BAB /* FullScreenCardView.swift in Sources */,
 				0F52450E293536C400B7A6DD /* ProfileView.swift in Sources */,
 				0F5244F5293413DA00B7A6DD /* TSUDateApp.swift in Sources */,
+				0F9055AF293E12C000D17BAB /* CardView.swift in Sources */,
 				0F5837A129364CAC00FD18B7 /* MessageThread.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
