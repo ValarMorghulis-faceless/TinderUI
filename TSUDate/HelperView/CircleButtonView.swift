@@ -8,11 +8,9 @@
 import SwiftUI
 
 enum ButtonType: String {
-    case back = "gobackward"
     case no = "xmark"
     case star = "star.fill"
     case heart = "heart.fill"
-    case lightning = "cloud.bolt.fill"
 }
 
 struct CircleButton: ButtonStyle {
@@ -30,10 +28,6 @@ struct ColorButton: ViewModifier {
     var type: ButtonType
     func body(content: Content) -> some View {
         switch type {
-        case .back:
-            return AnyView(content
-                .foregroundColor(.yellow)
-                           )
         case .no:
             return AnyView(content
                 .foregroundColor(.red)
@@ -46,11 +40,6 @@ struct ColorButton: ViewModifier {
             return AnyView(content
                 .foregroundColor(.green)
                            )
-        case .lightning:
-            return AnyView(content
-                .foregroundColor(.purple)
-                           )
-            
         }
     }
 }
@@ -86,10 +75,7 @@ struct CircleButtonView_Previews: PreviewProvider {
             Color.gray.opacity(0.2)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 50) {
-                CircleButtonView(type: .back) {
-                    // Do something
-                }
-                .frame(height: 50)
+            
                 CircleButtonView(type: .no) {
                     // Do something
                 }
@@ -102,10 +88,7 @@ struct CircleButtonView_Previews: PreviewProvider {
                     // Do something
                 }
                 .frame(height: 50)
-                CircleButtonView(type: .lightning) {
-                    // Do something
-                }
-                .frame(height: 50)
+               
             }
         }
     

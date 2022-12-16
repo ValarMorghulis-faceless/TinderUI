@@ -18,9 +18,6 @@ struct HomeView: View {
             
             Spacer()
             HStack {
-                CircleButtonView(type: .back) {
-                    appState.showPurchaseScreen()
-                }
                 Spacer()
                 CircleButtonView(type: .no) {
                     if let person = userMng.cardPeople.last {
@@ -47,11 +44,6 @@ struct HomeView: View {
                 }
                 Spacer()
 
-                CircleButtonView(type: .lightning) {
-                    appState.showPurchaseScreen()
-
-                }
-                Spacer()
 
             }
             .frame(height: 50)
