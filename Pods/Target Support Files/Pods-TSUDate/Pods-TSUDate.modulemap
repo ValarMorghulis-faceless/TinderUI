@@ -1,0 +1,6 @@
+framework module Pods_TSUDate {
+  umbrella header "Pods-TSUDate-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
-
+import Firebase
 @main
 struct TSUDateApp: App {
     
     @ObservedObject var UserMng: UserManager = UserManager()
     
+    
+    init() {
+        FirebaseApp.configure()
+    }
+
+        
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(AuthViewModel())
         }
     }
+    
+            
+    
 }
+

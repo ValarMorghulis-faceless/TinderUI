@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @EnvironmentObject var userMng: UserManager
     @EnvironmentObject var appState: AppStateManager
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack {
@@ -27,14 +28,17 @@ struct HomeView: View {
                 Spacer()
 
                 CircleButtonView(type: .star) {
-                    if let person = userMng.cardPeople.last {
-                        if userMng.currentUser.goldSubscriber {
-                            userMng.superLike(person)
-                        } else {
-                            appState.showPurchaseScreen()
-                        }
-                    }
+//                    if let person = userMng.cardPeople.last {
+//                        if userMng.currentUser.goldSubscriber {
+//                            userMng.superLike(person)
+//                        } else {
+//                            appState.showPurchaseScreen()
+//                        }
+//                    }
+                    viewModel.signOut()
+                        
                 }
+                .animation(.easeOut(duration: 0.25))
                 Spacer()
 
                 CircleButtonView(type: .heart) {

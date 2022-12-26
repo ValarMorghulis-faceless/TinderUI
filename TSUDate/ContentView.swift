@@ -13,11 +13,33 @@ struct ContentView: View {
     
     @ObservedObject var mng: AppStateManager = AppStateManager()
     @ObservedObject var userMng: UserManager = UserManager()
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
-        MainView()
-            .environmentObject(mng)
-            .environmentObject(userMng)
+        
+        
+        Group {
+            if viewModel.userSession != nil && viewModel.isLogin == false{
+               
+               
+              //  CreateAccountView()
+                    MainView()
+                            .environmentObject(mng)
+                            .environmentObject(userMng)
+                            .environmentObject(viewModel)
+           
+                
+            } else if viewModel.userSession != nil && viewModel.isLogin == true {
+                CreateAccountView()
+            } else {
+                LoginView()
+            }
+        }
+        
+          
+        
+        
     }
+  
 }
 
 struct ContentView_Previews: PreviewProvider {
