@@ -42,3 +42,4 @@ struct HideNavigationView: ViewModifier {
             .navigationBarHidden(true)
     }
 }
+

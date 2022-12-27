@@ -41,7 +41,7 @@ struct CreateAccountView: View {
     
    
 
-    @State private var images: [UIImage] = [UIImage(), UIImage(), UIImage(), UIImage()]
+    @State private var images: [UIImage] = [UIImage(named: "plus")!, UIImage(named: "plus")!,UIImage(named: "plus")!,UIImage(named: "plus")!]
     @State private var showSheet1 = false
     @State private var showSheet2 = false
     @State private var showSheet3 = false
@@ -106,40 +106,7 @@ struct CreateAccountView: View {
                                     .cornerRadius(20)
                             })
                             .padding()
-                            
-                            
-//                            Button(action: {
-//
-//                            }, label: {
-//                                HStack {
-//                                    Image(uiImage: self.selectedimage)
-//                                            .resizable()
-//                                            .cornerRadius(50)
-//                                            .padding(.all, 4)
-//                                            .frame(width: 100, height: 100)
-//                                            .background(Color.black.opacity(0.2))
-//                                            .aspectRatio(contentMode: .fill)
-//                                            .clipShape(Circle())
-//                                            .padding(8)
-//                                    Text("Change photo")
-//                                            .font(.headline)
-//                                            .frame(maxWidth: .infinity)
-//                                            .frame(height: 50)
-//                                            .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.262745098, green: 0.0862745098, blue: 0.8588235294, alpha: 1)), Color(#colorLiteral(red: 0.5647058824, green: 0.462745098, blue: 0.9058823529, alpha: 1))]), startPoint: .top, endPoint: .bottom))
-//                                            .cornerRadius(16)
-//                                        .foregroundColor(.white).onTapGesture {
-//                                            showSheet = true
-//                                          }
-//                                }
-//                                .sheet(isPresented: $showSheet) {
-//                                    ImagePicker(sourceType: .photoLibrary,selectedImage: self.$selectedimage)
-//                                }
-//
-//                            })
-                            
-                            
-                            
-                            
+                        
                             VStack(spacing: 18) {
                                 
                                 Text("Choose Birth Date")
@@ -237,7 +204,7 @@ struct CreateAccountView: View {
                                                        .stroke(Color.black, lineWidth: 1)
                                                    )
                                                    .padding(8)
-                                               Image(systemName: images[0] == UIImage()  ? "plus" : "x.circle")
+                                               Image(systemName: self.images[0] == UIImage(named: "plus")! ? "plus" : "x.circle")
                                                    .font(.system(size: 25))
                                                    .frame(width: 40, height: 40)
                                                    .background(Color.white)
@@ -245,7 +212,14 @@ struct CreateAccountView: View {
                                                    .padding(.leading, -35)
                                                    .padding(.top, -110 )
                                                    .onTapGesture {
-                                                                 showSheet1 = true
+                                                      
+                                                       if self.images[0] != UIImage(named: "plus")! {
+                                                           self.images[0] = UIImage(named: "plus")!
+                                                           showSheet1 = false
+                                                       } else {
+                                                           showSheet1 = true
+                                                       }
+                                                       
                                                        
                                                                }
                                                 
@@ -279,7 +253,7 @@ struct CreateAccountView: View {
                                                        .stroke(Color.black, lineWidth: 1)
                                                    )
                                                    .padding(8)
-                                               Image(systemName: images[1] == UIImage() ? "plus" : "x.circle")
+                                               Image(systemName: self.images[1] == UIImage(named: "plus")! ? "plus" : "x.circle")
                                                    .font(.system(size: 25))
                                                    .frame(width: 40, height: 40)
                                                    .background(Color.white)
@@ -287,7 +261,12 @@ struct CreateAccountView: View {
                                                    .padding(.leading, -35)
                                                    .padding(.top, -110 )
                                                    .onTapGesture {
-                                                                 showSheet2 = true
+                                                       if self.images[1] != UIImage(named: "plus")! {
+                                                           self.images[1] = UIImage(named: "plus")!
+                                                           showSheet2 = false
+                                                       } else {
+                                                           showSheet2 = true
+                                                       }
                                                                }
                                                 
                                                    
@@ -320,7 +299,7 @@ struct CreateAccountView: View {
                                                        .stroke(Color.black, lineWidth: 1)
                                                    )
                                                    .padding(8)
-                                               Image(systemName: images[2] == UIImage() ? "plus" : "x.circle")
+                                               Image(systemName: self.images[2] == UIImage(named: "plus")! ? "plus" : "x.circle")
                                                    .font(.system(size: 25))
                                                    .frame(width: 40, height: 40)
                                                    .background(Color.white)
@@ -328,11 +307,14 @@ struct CreateAccountView: View {
                                                    .padding(.leading, -35)
                                                    .padding(.top, -110 )
                                                    .onTapGesture {
-                                                                 showSheet3 = true
+                                                       if self.images[2] != UIImage(named: "plus")! {
+                                                           self.images[2] = UIImage(named: "plus")!
+                                                           showSheet3 = false
+                                                       } else {
+                                                           showSheet3 = true
+                                                       }
                                                        
                                                                }
-                                                
-                                                   
                                            }
                                            .sheet(isPresented: $showSheet3) {
                                                            // Pick an image from the photo library:
@@ -360,7 +342,7 @@ struct CreateAccountView: View {
                                                        .stroke(Color.black, lineWidth: 1)
                                                    )
                                                    .padding(8)
-                                               Image(systemName: images[3] == UIImage() ? "plus" : "x.circle")
+                                               Image(systemName: self.images[3] == UIImage(named: "plus")! ? "plus" : "x.circle")
                                                    .font(.system(size: 25))
                                                    .frame(width: 40, height: 40)
                                                    .background(Color.white)
@@ -368,7 +350,12 @@ struct CreateAccountView: View {
                                                    .padding(.leading, -35)
                                                    .padding(.top, -110 )
                                                    .onTapGesture {
-                                                                 showSheet4 = true
+                                                       if self.images[3] != UIImage(named: "plus")! {
+                                                           self.images[3] = UIImage(named: "plus")!
+                                                           showSheet4 = false
+                                                       } else {
+                                                           showSheet4 = true
+                                                       }
                                                                }
                                                 
                                                    
@@ -401,22 +388,24 @@ struct CreateAccountView: View {
                             
                             Button(action: {
                                 
-                                if username == "" && birthDate == nil && selectedGender == "" && selectedInGender == [] && bio == "" {
-                                    ProgressHUD.showError("ALL FIELDS ARE RECUIRED")
-                                } else {
-                                    userDataInit()
-                                    ProgressHUD.show()
-                                    firestoreMng.saveUserToFireStore { error in
-                                        if error != nil {
-                                            ProgressHUD.showError(error?.localizedDescription)
-                                        } else {
-                                         //   viewModel.userSession = Auth.auth().currentUser
-                                            viewModel.isLogin = false
-                                       
-                                            ProgressHUD.dismiss()
-                                        }
-                                    }
-                                }
+//                                if username == "" && birthDate == nil && selectedGender == "" && selectedInGender == [] && bio == "" {
+//                                    ProgressHUD.showError("ALL FIELDS ARE RECUIRED")
+//                                } else {
+//                                    userDataInit()
+//                                    ProgressHUD.show()
+//                                    firestoreMng.saveUserToFireStore { error in
+//                                        if error != nil {
+//                                            ProgressHUD.showError(error?.localizedDescription)
+//                                        } else {
+//                                         //   viewModel.userSession = Auth.auth().currentUser
+//                                            viewModel.isLogin = false
+//
+//                                            ProgressHUD.dismiss()
+//                                        }
+//                                    }
+//                                }
+                                
+                              pushimages(images)
 
                                 
                                 
@@ -499,9 +488,13 @@ struct CreateAccountView: View {
         firestoreMng.bio = bio
     }
     
-    func pushimages() {
-        for i in images {
-            storageMng.upload(image: i)
+    func pushimages(_ imagearr: [UIImage]) {
+        for i in imagearr {
+            if i == UIImage(named: "plus")! {
+            } else {
+                storageMng.uploadPhoto(image: i)
+            }
+            
         }
     }
        
