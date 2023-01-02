@@ -97,5 +97,22 @@ class FirestoreManager: ObservableObject {
 
     }
     
+    var usersArr: [NSDictionary] = []
+    
+    func loadUsersFromFirestore(completion: @escaping (_ error: Error?) -> Void) {
+        let db = Firestore.firestore()
+        db.collection("User").getDocuments { snapshot, error in
+            completion(error)
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+                for document in snapshot!.documents {
+                    self.usersArr.append(document.data() as NSDictionary)
+                    print("\(document.data())")
+                }
+            }
+        }
+    }
+    
     
 }

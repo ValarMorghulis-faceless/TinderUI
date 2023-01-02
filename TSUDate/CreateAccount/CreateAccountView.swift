@@ -388,24 +388,25 @@ struct CreateAccountView: View {
                             
                             Button(action: {
                                 
-//                                if username == "" && birthDate == nil && selectedGender == "" && selectedInGender == [] && bio == "" {
-//                                    ProgressHUD.showError("ALL FIELDS ARE RECUIRED")
-//                                } else {
-//                                    userDataInit()
-//                                    ProgressHUD.show()
-//                                    firestoreMng.saveUserToFireStore { error in
-//                                        if error != nil {
-//                                            ProgressHUD.showError(error?.localizedDescription)
-//                                        } else {
-//                                         //   viewModel.userSession = Auth.auth().currentUser
-//                                            viewModel.isLogin = false
-//
-//                                            ProgressHUD.dismiss()
-//                                        }
-//                                    }
-//                                }
+                                if username == "" && birthDate == nil && selectedGender == "" && selectedInGender == [] && bio == "" {
+                                    ProgressHUD.showError("ALL FIELDS ARE RECUIRED")
+                                } else {
+                                    userDataInit()
+                                    ProgressHUD.show()
+                                    firestoreMng.saveUserToFireStore { error in
+                                        if error != nil {
+                                            ProgressHUD.showError(error?.localizedDescription)
+                                        } else {
+                                         //   viewModel.userSession = Auth.auth().currentUser
+                                            viewModel.isLogin = false
+                                            pushimages(images)
+
+                                            ProgressHUD.dismiss()
+                                        }
+                                    }
+                                }
                                 
-                              pushimages(images)
+                              
 
                                 
                                 

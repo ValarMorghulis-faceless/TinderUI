@@ -12,6 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var userMng: UserManager
     @EnvironmentObject var appState: AppStateManager
     @EnvironmentObject var viewModel: AuthViewModel
+    @ObservedObject var firestoreManager = FirestoreManager()
     
     var body: some View {
         VStack {
@@ -23,6 +24,11 @@ struct HomeView: View {
                 CircleButtonView(type: .no) {
                     if let person = userMng.cardPeople.last {
                         userMng.swipe(person, .nope)
+                    }
+                    firestoreManager.loadUsersFromFirestore { error in
+                        if error != nil {
+                            print(error?.localizedDescription)
+                        }
                     }
                 }
                 Spacer()
@@ -61,6 +67,7 @@ struct HomeView: View {
 }
 
 struct HomeView_Previews: PreviewProvider {
+    
     static var previews: some View {
         HomeView()
             .environmentObject(UserManager())

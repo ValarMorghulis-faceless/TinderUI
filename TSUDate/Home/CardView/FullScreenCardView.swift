@@ -47,7 +47,7 @@ struct FullScreenCardView: View {
                                 }
                                 .opacity(0.75)
                                 
-                                Text("\(person.distance) kms away")
+                                Text("TSU")
                                     .font(.system(size: 18, weight: .medium))
                                     .opacity(0.75)
 

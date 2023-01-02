@@ -20,29 +20,29 @@ struct ContentView: View {
         Group {
             
             
-            if viewModel.userSession != nil {
-                CreateAccountView()
-            } else {
-                LoginView()
-            }
-            
-            
-            
-//            if viewModel.userSession != nil && viewModel.isLogin == false{
-//
-//
-//              //  CreateAccountView()
-//                    MainView()
-//                            .environmentObject(mng)
-//                            .environmentObject(userMng)
-//                            .environmentObject(viewModel)
-//
-//
-//            } else if viewModel.userSession != nil && viewModel.isLogin == true {
+//            if viewModel.userSession != nil {
 //                CreateAccountView()
 //            } else {
 //                LoginView()
 //            }
+//
+            
+            
+            if viewModel.userSession != nil && viewModel.isLogin == false{
+
+
+              //  CreateAccountView()
+                    MainView()
+                            .environmentObject(mng)
+                            .environmentObject(userMng)
+                            .environmentObject(viewModel)
+
+
+            } else if viewModel.userSession != nil && viewModel.isLogin == true {
+                CreateAccountView()
+            } else {
+                LoginView()
+            }
         }
         
           
