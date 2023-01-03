@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 import Firebase
 import FirebaseFirestore
+import FirebaseCore
+import FirebaseDatabase
+
+
 
 
 class FirestoreManager: ObservableObject {
@@ -21,8 +25,8 @@ class FirestoreManager: ObservableObject {
     var interestedIn: [String] = []
     var bio: String = ""
     let registerDate = Date()
+    var imageLinks: [String] = []
     
-        
     var UserDictionary: NSDictionary {
         
         return NSDictionary(objects: [
@@ -34,6 +38,7 @@ class FirestoreManager: ObservableObject {
             self.interestedIn,
             self.bio,
             self.registerDate,
+            self.imageLinks
         ], forKeys: [
         "USERID" as NSCopying,
         "EMAIL" as NSCopying,
@@ -43,6 +48,7 @@ class FirestoreManager: ObservableObject {
         "INTERESTEDIN" as NSCopying,
         "BIO" as NSCopying,
         "REGISTERDATE" as NSCopying,
+        "IMAGELINKS" as NSCopying
         ])
         
     }
@@ -113,6 +119,11 @@ class FirestoreManager: ObservableObject {
             }
         }
     }
+    
+
+    
+    
+    
     
     
 }

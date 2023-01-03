@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import ProgressHUD
 
 struct CardStack: View {
     
-    var people: [Person]
+    @EnvironmentObject var userMng: UserManager
+    
+    //var people: [Person]
     
     @State private var fullscreenMode: Bool = false
     
@@ -18,7 +21,7 @@ struct CardStack: View {
     var body: some View {
         
         ZStack {
-            ForEach(people) { person in
+            ForEach(userMng.users) { person in
                 CardView(person: person, fullscreenMode: $fullscreenMode)
             }
         }
@@ -29,6 +32,7 @@ struct CardStack: View {
 
 struct CardStack_Previews: PreviewProvider {
     static var previews: some View {
-        CardStack(people: Person.examples)
+        CardStack()
+            .environmentObject(UserManager())
     }
 }

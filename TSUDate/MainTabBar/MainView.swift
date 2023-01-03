@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject private var appState: AppStateManager
+    @ObservedObject private var firManager: FirestoreManager = FirestoreManager()
     
     func correctViewForState() -> some View {
         switch appState.selectedTab {
@@ -38,6 +39,7 @@ struct MainView: View {
                     
                     HStack(spacing:80) {
                         TabBarButtonView(type: .fire)
+                           
                         
                         TabBarButtonView(type: .star)
                         
@@ -51,6 +53,7 @@ struct MainView: View {
                     .padding(.top, 30)
                     
                     correctViewForState()
+                  
                     
                     Spacer()
                 }

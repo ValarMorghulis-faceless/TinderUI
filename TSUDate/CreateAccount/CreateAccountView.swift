@@ -66,7 +66,6 @@ struct CreateAccountView: View {
    @State private var selectedInGender: [String] = []
 
 
-
     
     var body: some View {
         NavigationView {
@@ -391,19 +390,22 @@ struct CreateAccountView: View {
                                 if username == "" && birthDate == nil && selectedGender == "" && selectedInGender == [] && bio == "" {
                                     ProgressHUD.showError("ALL FIELDS ARE RECUIRED")
                                 } else {
-                                    userDataInit()
                                     ProgressHUD.show()
-                                    firestoreMng.saveUserToFireStore { error in
-                                        if error != nil {
-                                            ProgressHUD.showError(error?.localizedDescription)
-                                        } else {
-                                         //   viewModel.userSession = Auth.auth().currentUser
-                                            viewModel.isLogin = false
-                                            pushimages(images)
+                                    pushimages(images)
+                                    userDataInit()
+                                        firestoreMng.saveUserToFireStore { error in
+                                            if error != nil {
+                                                ProgressHUD.showError(error?.localizedDescription)
+                                            } else {
+                                             //   viewModel.userSession = Auth.auth().currentUser
+                                                viewModel.isLogin = false
+                                              
 
-                                            ProgressHUD.dismiss()
+                                                ProgressHUD.dismiss()
+                                                
+                                            }
                                         }
-                                    }
+                                  
                                 }
                                 
                               
@@ -497,6 +499,7 @@ struct CreateAccountView: View {
             }
             
         }
+     
     }
        
 }

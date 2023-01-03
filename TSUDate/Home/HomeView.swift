@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ProgressHUD
 
 struct HomeView: View {
     
@@ -15,21 +16,23 @@ struct HomeView: View {
     @ObservedObject var firestoreManager = FirestoreManager()
     
     var body: some View {
+        
+        
         VStack {
-            CardStack(people: userMng.cardPeople)
             
+           
+            CardStack()
+         
             Spacer()
             HStack {
                 Spacer()
                 CircleButtonView(type: .no) {
-                    if let person = userMng.cardPeople.last {
+                    if let person = userMng.users.last {
                         userMng.swipe(person, .nope)
                     }
-                    firestoreManager.loadUsersFromFirestore { error in
-                        if error != nil {
-                            print(error?.localizedDescription)
-                        }
-                    }
+                    
+                   // print(persons)
+                 
                 }
                 Spacer()
 
@@ -48,7 +51,7 @@ struct HomeView: View {
                 Spacer()
 
                 CircleButtonView(type: .heart) {
-                    if let person = userMng.cardPeople.last {
+                    if let person = userMng.users.last {
                         userMng.swipe(person, .like)
                     }
                 }
